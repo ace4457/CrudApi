@@ -42,7 +42,7 @@ namespace CrudApi.Controllers {
             //    Summary = Summaries[rng.Next(Summaries.Length)]
             //})
             //.ToArray();
-            return "bla";
+            return "Irfan";
         }
     }
 }
