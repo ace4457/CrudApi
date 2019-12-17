@@ -5,21 +5,26 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace CrudApi.Controllers
-{
+namespace CrudApi.Controllers {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
-    {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    [Route ("[controller]")]
+    public class WeatherForecastController : ControllerBase {
+        private static readonly string[] Summaries = new [] {
+            "Freezing",
+            "Bracing",
+            "Chilly",
+            "Cool",
+            "Mild",
+            "Warm",
+            "Balmy",
+            "Hot",
+            "Sweltering",
+            "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController()
-        {
+        public WeatherForecastController () {
             _logger = null;
         }
         //public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -27,11 +32,8 @@ namespace CrudApi.Controllers
         //    _logger = logger;
         //}
 
-        
-
         [HttpGet]
-        public ActionResult<String> Get()
-        {
+        public ActionResult<String> Get () {
             //var rng = new Random();
             //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             //{
@@ -40,7 +42,7 @@ namespace CrudApi.Controllers
             //    Summary = Summaries[rng.Next(Summaries.Length)]
             //})
             //.ToArray();
-            return "Irfan";
+            return "Bla";
         }
     }
 }
